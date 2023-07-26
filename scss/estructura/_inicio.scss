@@ -67,33 +67,33 @@ main{
             border-radius: 30px;
     }
     nav{
-        div{
+        padding: 10px;
+        margin: 10px 25px;
+        text-align: center;
+        opacity: 70%;
+        div{ 
             h2{
-                .listainicio{
-                    background-color:$fondo-listas;
+                background-color:$fondo-listas;
                     color: $textos-secundarios;
                     height: 90px;
                     padding: 25px;
-                    margin: 25px;
-                    opacity: 70%;
+                    margin: 15px;
+                    border-radius: 30px;
+                .listainicio{
+                    margin: 50px;
                 }
                 a{
                     text-decoration: none;
                     color: $textos-secundarios;
                     font-family:$titulos-secundarios;
                     font-size: 30px;
-                    overflow: hidden;
-                    text-align: center;
                     height: 100px;
-                    padding: 10px;
-                    margin: 25px 50px;
-                    border-radius: 30px;
                     &:hover {
                         @include hover;
                     }
                 }
             }
-        }
+        }   
     }
 } 
   /*pie de pagina*/

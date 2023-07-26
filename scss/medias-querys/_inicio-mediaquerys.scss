@@ -56,38 +56,41 @@
    /*frase inicio*/
    /*listas de la pagina de incio*/
   main{
-      div{
-          h2{
-              font-size:$font-20px;
-              height: 60px;
-              padding: 10px;
-              margin: 15px 20px;
-              border-radius: 15px;
-          }
-      }
-      nav{
-          div{
-              h2{
-                  .listainicio{
-                      height: 60px;
-                      padding: 20px;
-                      margin: 20px;
-                      border-radius: 20px;
-                  }
-                  a{
+        h1{
+            font-size:$font-20px;
+            height: 60px;
+            padding: 10px;
+            margin: 15px 20px;
+            border-radius: 15px;
+        }
+        nav{
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            opacity: 70%;
+            div{
+                h2{
+                    height: 50px;
+                    padding: 5px;
+                    border-radius: 20px;
+                    margin: 10px;
+                    .listainicio{
+                      margin: 10px;
+                    }
+                    a{
                       color:$textos-secundarios;
                       font-family:$titulos-secundarios;
                       font-size: $font-15px;
                       text-align: center;
                       height: 20px;
-                      padding: 20px;
-                      margin: 25px;
+                      padding: 5px;
+                      margin: 15px;
                       border-radius: 10px;
-                  }
-              }
-          }
-      }
-  } 
+                    }
+                }
+            }
+        }
+    } 
   /*pie de pagina*/
   footer{
       h6{
