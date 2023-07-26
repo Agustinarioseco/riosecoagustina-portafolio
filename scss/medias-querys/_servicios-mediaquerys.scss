@@ -1,0 +1,108 @@
+@media (min-width: 800px) and (max-width: 1200px){
+    #servicios {
+        display: grid;
+        grid-template-areas: "servicio1 servicio2 servicio3";
+        grid-template-columns: 250px, 250px 250px;
+        grid-template-rows: 100%;
+        align-self: center;
+        justify-items: center;
+        .diseño-de-marca {
+            grid-area: servicio1;
+        }
+        .diseño-de-papeleria {
+            grid-area: servicio2;
+        }
+        .diseño-web {
+            grid-area: servicio3;
+        }
+    }
+    main{
+        section{
+            .imagen-servicio {
+                height: 180px;
+                width: 250px;
+                padding: 5px;
+                margin: 10px;
+            }
+            div{
+                h3{
+                    width: 250px;
+                }
+            }
+            .lista-servicios {
+                height: 300px;
+                font-size:$font-15px;
+                width: 250px;
+            }
+            div{
+                .boton {
+                    height: 30px;
+                    width: 250px;
+                    padding: 5px;
+                    margin: 10px;
+                    border-radius: 10px;
+                    .textoboton {
+                        font-size: 15px;
+                        &:hover {
+                            @include hover;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}
+  @media (min-width: 320px) and (max-width: 799px){
+    #servicios {
+        display: grid;
+        grid-template-areas: "servicio1" "servicio2" "servicio3";
+        grid-template-columns: 1fr;
+        grid-template-rows: 470px 450px 400px;
+        justify-items: center;
+        .diseño-de-marca{
+          grid-area: servicio1;
+        }
+        .diseño-de-papeleria{
+          grid-area: servicio2;
+        }
+        .diseño-web{
+          grid-area: servicio3;
+        }
+    }
+    main{
+        section{
+            .imagen-servicio {
+                height: 200px;
+                @include servicios-size;
+            }
+            div{
+                h3{
+                    @include servicios-size;
+                    font-size:$font-20px;
+                    height: 25px;
+                    border-radius: 10px;
+                }
+            }
+            .lista-servicios {
+                @include servicios-size;
+                font-size: 12px;
+                text-align: start;
+                height: 100%;
+                border-radius: 5px;
+            }
+            div{
+                .boton {
+                    @include servicios-size;
+                    border-radius: 10px;
+                    .textoboton {
+                        font-size: $font-15px;
+                        a:hover {
+                            @include hover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

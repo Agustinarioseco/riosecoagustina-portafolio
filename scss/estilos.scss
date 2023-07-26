@@ -1,0 +1,22 @@
+
+@import "elementos/variables-y-maps";
+@import "elementos/mixins";
+@import "elementos/fonts";
+@import "elementos/condicional";
+/******ESTRUCTURA******/
+@import "estructura/body";
+/******INDEX******/
+@import "estructura/inicio";
+@import "medias-querys/inicio-mediaquerys";
+/******SOBRE MI******/
+@import "estructura/sobre-mi";
+@import "medias-querys/sobremi-mediaquerys";
+/*****PROYECTOS*****/
+@import "estructura/proyectos";
+@import "medias-querys/proyectos-mediaquerys";
+/*****SERVICIOS*****/
+@import "estructura/servicios";
+@import "medias-querys/servicios-mediaquerys";
+/*****CONTACTO*****/
+@import "estructura/contacto";
+@import "medias-querys/contacto-mediaquerys";

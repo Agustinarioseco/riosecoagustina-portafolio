@@ -1,0 +1,26 @@
+main{
+    #sobremi-main{
+        overflow-x: hidden;
+        display: grid;
+        grid-template-areas: "carrusel parrafo";
+        grid-template-columns: repeat(2 1fr);
+    }
+    div{
+        .carrusel{
+            @include carrusel-sobre-mi;
+        }
+    }
+    .parrafo{
+        grid-area: parrafo;
+        overflow:map-get($parrafo, overflow);
+        font-family:map-get($parrafo, font);
+        color:map-get($parrafo, color);
+        background-color:map-get($parrafo, background);
+        font-size:17px;
+        width:map-get($parrafo, width);
+        padding:5px 25px;
+        margin:5px;
+        border-radius:map-get($parrafo, border);
+        font-weight: 600;
+    }
+}

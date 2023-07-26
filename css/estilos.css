@@ -1,0 +1,893 @@
+@charset "UTF-8";
+/*colores*/
+/*fuentes*/
+/*size*/
+/*maps*/
+/*mixins*/
+@font-face {
+  font-family: "julius";
+  src: url(../fonts/JuliusSansOne-Regular.ttf);
+}
+@font-face {
+  font-family: "bebas neue";
+  src: url(../fonts/BebasNeue-Regular.ttf);
+}
+body {
+  background-image: url(../img/fondo1.png);
+  background-size: cover;
+}
+
+/******ESTRUCTURA******/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*maqueta pagina principal*/
+body #grilla {
+  overflow-x: hidden;
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-columns: 100%;
+}
+body #grilla .header {
+  grid-area: header;
+}
+body #grilla .main {
+  grid-area: main;
+}
+body #grilla .footer {
+  grid-area: footer;
+}
+
+/******INDEX******/
+/*menu de incio*/
+#header {
+  overflow: hidden;
+  background-color: #F4E7EC;
+  display: grid;
+  grid-template-areas: "imagen-logo menu";
+  grid-template-columns: 140px 1fr;
+  grid-template-rows: 135px;
+}
+
+header section a .imagen-logo {
+  grid-area: imagen-logo;
+  background-color: #F4E7EC;
+  height: 130px;
+  width: 130px;
+  padding: 2px;
+  margin: 2px;
+}
+header nav .menu {
+  text-decoration: none;
+  list-style-type: none;
+  overflow: hidden;
+  grid-area: menu;
+  height: 140px;
+  padding: 40px 10px;
+  margin: 10px 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .menu .textomenu {
+  font-family: "bebas neue";
+  font-size: 25px;
+  padding: 40px 10px;
+  margin: 1px;
+  text-decoration: none;
+  color: #918f91;
+}
+header nav .menu .textomenu:hover {
+  padding: 8px;
+  background-color: #f6dce6;
+  border-radius: 15px;
+}
+
+/*frase inicio*/
+/*listas de la pagina de incio*/
+main h1 {
+  color: black;
+  font-family: "julius";
+  font-size: 30px;
+  overflow: hidden;
+  background-color: #e8a197;
+  opacity: 70%;
+  text-align: center;
+  height: 100px;
+  padding: 30px;
+  margin: 25px 50px;
+  border-radius: 30px;
+}
+main nav div h2 .listainicio {
+  background-color: #e8a197;
+  color: black;
+  height: 90px;
+  padding: 25px;
+  margin: 25px;
+  opacity: 70%;
+}
+main nav div h2 a {
+  text-decoration: none;
+  color: black;
+  font-family: "julius";
+  font-size: 30px;
+  overflow: hidden;
+  text-align: center;
+  height: 100px;
+  padding: 10px;
+  margin: 25px 50px;
+  border-radius: 30px;
+}
+main nav div h2 a:hover {
+  font-weight: lighter;
+  padding: 1px 10px;
+  background-color: #F4E7EC;
+  opacity: 50%;
+  border: 10px;
+}
+
+/*pie de pagina*/
+footer {
+  overflow: hidden;
+  background-color: #F4E7EC;
+  opacity: 80%;
+}
+footer h6 {
+  font-family: "bebas neue";
+  color: #918f91;
+  text-align: center;
+  width: 100%;
+  font-size: 45px;
+  padding: 10px;
+  margin: 10px;
+}
+footer .redesfooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+footer .redesfooter a .footerr {
+  height: 45px;
+  width: 45px;
+  padding: 5px;
+  margin: 5px;
+}
+footer .redesfooter a:hover {
+  font-weight: lighter;
+  padding: 1px 10px;
+  background-color: #F4E7EC;
+  opacity: 50%;
+  border: 10px;
+}
+footer .pie-de-pagina {
+  font-family: "julius";
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+  padding: 30px 5px 5px;
+  margin: 10px;
+}
+
+@media (min-width: 320px) and (max-width: 699px) {
+  #grilla {
+    overflow-x: hidden;
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-columns: 100%;
+  }
+  .header {
+    grid-area: header;
+  }
+  .main {
+    grid-area: main;
+  }
+  .footer {
+    grid-area: footer;
+  }
+  /*menu de incio*/
+  #header {
+    background-color: #F4E7EC;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "imagen-logo" "menu";
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 40px;
+    justify-items: center;
+  }
+  header section .imagen-logo {
+    grid-area: imagen-logo;
+    background-color: #F4E7EC;
+    height: 120px;
+    width: 120px;
+    padding: 5px 1px 1px;
+  }
+  header nav .menu {
+    grid-area: menú;
+    justify-items: start;
+    height: 40px;
+    padding: 15px;
+    margin: 1px 5px;
+  }
+  header nav .menu .textomenu {
+    grid-area: menu;
+    justify-items: start;
+    font-size: 12px;
+    padding: 5px 9px;
+  }
+  header nav .menu .textomenu:hover {
+    font-weight: lighter;
+    padding: 1px 10px;
+    background-color: #F4E7EC;
+    opacity: 50%;
+    border: 10px;
+  }
+  /*frase inicio*/
+  /*listas de la pagina de incio*/
+  main div h2 {
+    font-size: 20px;
+    height: 60px;
+    padding: 10px;
+    margin: 15px 20px;
+    border-radius: 15px;
+  }
+  main nav div h2 .listainicio {
+    height: 60px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+  }
+  main nav div h2 a {
+    color: black;
+    font-family: "julius";
+    font-size: 15px;
+    text-align: center;
+    height: 20px;
+    padding: 20px;
+    margin: 25px;
+    border-radius: 10px;
+  }
+  /*pie de pagina*/
+  footer h6 {
+    font-size: 25px;
+  }
+  footer .footerr {
+    height: 35px;
+    width: 35px;
+  }
+  footer .pie-de-pagina {
+    font-size: 12px;
+    padding: 10px 5px 5px;
+    margin: 10px 10px 5px;
+  }
+}
+/******SOBRE MI******/
+main #sobremi-main {
+  overflow-x: hidden;
+  display: grid;
+  grid-template-areas: "carrusel parrafo";
+  grid-template-columns: repeat(2 1fr);
+}
+main div .carrusel {
+  grid-area: carrusel;
+  margin: 10px;
+}
+main .parrafo {
+  grid-area: parrafo;
+  overflow: hidden;
+  font-family: "julius";
+  color: black;
+  background-color: #F4E7EC;
+  font-size: 17px;
+  width: 700px;
+  padding: 5px 25px;
+  margin: 5px;
+  border-radius: 25px;
+  font-weight: 600;
+}
+
+@media (min-width: 320px) and (max-width: 699px) {
+  main #sobremi-main {
+    display: grid;
+    grid-template-areas: "carrusel" "parrafo";
+    grid-template-rows: repeat(2 1fr);
+    justify-items: center;
+  }
+  main div .carrusel {
+    grid-area: carrusel;
+    margin: 10px;
+    width: 300px;
+  }
+  main .parrafo {
+    grid-area: parrafo;
+    font-size: 12px;
+    width: 300px;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 15px;
+  }
+}
+@media (min-width: 700px) and (max-width: 1200px) {
+  main #sobremi-main {
+    display: grid;
+    grid-template-areas: "carrusel" "parrafo";
+    grid-template-rows: repeat(2 1fr);
+    justify-items: center;
+  }
+  main div .carrusel {
+    grid-area: carrusel;
+    margin: 10px;
+    width: 650px;
+  }
+  main .parrafo {
+    grid-area: parrafo;
+    font-size: 15px;
+    width: 650px;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 15px;
+  }
+}
+/*****PROYECTOS*****/
+#pagina-proyecto {
+  display: grid;
+  grid-template-areas: "proyecto1 proyecto2 proyecto3" "proyecto4 proyecto5 proyecto6";
+  grid-template-columns: repeat(3 1fr);
+  grid-template-rows: 2 1fr;
+  justify-items: center;
+}
+#pagina-proyecto .proyecto1 {
+  grid-area: proyecto1;
+}
+#pagina-proyecto .proyecto2 {
+  grid-area: proyecto2;
+}
+#pagina-proyecto .proyecto3 {
+  grid-area: proyecto3;
+}
+#pagina-proyecto .proyecto4 {
+  grid-area: proyecto4;
+}
+#pagina-proyecto .proyecto5 {
+  grid-area: proyecto5;
+}
+#pagina-proyecto .proyecto6 {
+  grid-area: proyecto6;
+}
+
+main section div h4 {
+  font-family: "bebas neue";
+  font-size: 30px;
+  color: black;
+  background-color: #e8a197;
+  text-align: center;
+  height: 40px;
+  width: 350px;
+  padding: 5px;
+  margin: 10px 50px;
+  border-radius: 15px;
+}
+main section div .carrusel-imagen {
+  height: 350px;
+  width: 350px;
+  padding: 10px;
+  margin: 10px 50px;
+}
+main section .texto-proyecto {
+  height: 350px;
+  width: 350px;
+  padding: 10px;
+  margin: 10px 50px;
+  font-family: "julius";
+  font-size: 15px;
+  color: black;
+  background-color: #F4E7EC;
+  text-align: center;
+  border-radius: 15px;
+  font-weight: 600;
+}
+
+@media (min-width: 320px) and (max-width: 699px) {
+  #pagina-proyecto {
+    display: grid;
+    grid-template-areas: "proyecto1" "proyecto2" "proyecto3" "proyecto4" "proyecto5" "proyecto6";
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: 6 1fr;
+    justify-items: center;
+  }
+  #pagina-proyecto .proyecto1 {
+    grid-area: proyecto1;
+  }
+  #pagina-proyecto .proyecto2 {
+    grid-area: proyecto2;
+  }
+  #pagina-proyecto .proyecto3 {
+    grid-area: proyecto3;
+  }
+  #pagina-proyecto .proyecto4 {
+    grid-area: proyecto4;
+  }
+  #pagina-proyecto .proyecto5 {
+    grid-area: proyecto5;
+  }
+  #pagina-proyecto .proyecto6 {
+    grid-area: proyecto6;
+  }
+  main section div h4 {
+    font-size: 20px;
+    width: 300px;
+    height: 25px;
+    padding: 3px;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  main section div .carrusel-imagen {
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+  }
+  main section div .texto-proyecto {
+    font-size: 12px;
+    color: "julius";
+    height: 100%;
+    width: 300px;
+    padding: 3px;
+    margin: 10px;
+    border-radius: 10px;
+  }
+}
+@media (min-width: 700px) and (max-width: 1200px) {
+  #pagina-proyecto {
+    display: grid;
+    grid-template-areas: "proyecto1 proyecto2" "proyecto3 proyecto4" "proyecto5 proyecto6";
+    grid-template-columns: repeat(2 1fr);
+    grid-template-rows: 3 1fr;
+    justify-items: center;
+  }
+  #pagina-proyecto .proyecto1 {
+    grid-area: proyecto1;
+  }
+  #pagina-proyecto .proyecto2 {
+    grid-area: proyecto2;
+  }
+  #pagina-proyecto .proyecto3 {
+    grid-area: proyecto3;
+  }
+  #pagina-proyecto .proyecto4 {
+    grid-area: proyecto4;
+  }
+  #pagina-proyecto .proyecto5 {
+    grid-area: proyecto5;
+  }
+  #pagina-proyecto .proyecto6 {
+    grid-area: proyecto6;
+  }
+  main section div h4 {
+    font-size: 25px;
+    height: 35px;
+    width: 300px;
+    margin: 10px 25px;
+    border-radius: 10px;
+  }
+  main section div .carrusel-imagen {
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+    margin: 10px 25px;
+  }
+  main section .texto-proyecto {
+    font-size: 15px;
+    height: 410px;
+    width: 300px;
+    padding: 5px;
+    margin: 10px 25px;
+    border-radius: 10px;
+  }
+}
+/*****SERVICIOS*****/
+#servicios {
+  display: grid;
+  grid-template-areas: "servicio1 servicio2 servicio3";
+  grid-template-columns: repeat(3 1fr);
+  grid-template-rows: 100%;
+  align-self: center;
+  justify-items: center;
+}
+#servicios .diseño-de-marca {
+  grid-area: servicio1;
+}
+#servicios .diseño-de-papeleria {
+  grid-area: servicio2;
+}
+#servicios .diseño-web {
+  grid-area: servicio3;
+}
+
+main section .imagen-servicio {
+  height: 300px;
+  width: 400px;
+  padding: 5px;
+  margin: 10px;
+}
+main section div h3 {
+  font-family: "bebas neue";
+  font-size: 20px;
+  color: black;
+  background-color: #e8a197;
+  text-align: center;
+  height: 35px;
+  width: 400px;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 15px;
+}
+main section .lista-servicios {
+  font-weight: 600;
+  list-style-type: none;
+  color: black;
+  background-color: #F4E7EC;
+  font-family: "julius";
+  font-size: 20px;
+  text-align: start;
+  height: 300px;
+  width: 400px;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+}
+main section div .boton {
+  font-family: "julius";
+  text-decoration: none;
+  background-color: #e8a197;
+  text-align: center;
+  height: 40px;
+  width: 400px;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 15px;
+}
+main section div .boton .textoboton {
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+  font-size: 20px;
+  padding: 1px;
+  margin: 1px;
+}
+main section div .boton .textoboton:hover {
+  font-weight: lighter;
+  padding: 1px 10px;
+  background-color: #F4E7EC;
+  opacity: 50%;
+  border: 10px;
+}
+
+@media (min-width: 800px) and (max-width: 1200px) {
+  #servicios {
+    display: grid;
+    grid-template-areas: "servicio1 servicio2 servicio3";
+    grid-template-columns: 250px, 250px 250px;
+    grid-template-rows: 100%;
+    align-self: center;
+    justify-items: center;
+  }
+  #servicios .diseño-de-marca {
+    grid-area: servicio1;
+  }
+  #servicios .diseño-de-papeleria {
+    grid-area: servicio2;
+  }
+  #servicios .diseño-web {
+    grid-area: servicio3;
+  }
+  main section .imagen-servicio {
+    height: 180px;
+    width: 250px;
+    padding: 5px;
+    margin: 10px;
+  }
+  main section div h3 {
+    width: 250px;
+  }
+  main section .lista-servicios {
+    height: 300px;
+    font-size: 15px;
+    width: 250px;
+  }
+  main section div .boton {
+    height: 30px;
+    width: 250px;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  main section div .boton .textoboton {
+    font-size: 15px;
+  }
+  main section div .boton .textoboton:hover {
+    font-weight: lighter;
+    padding: 1px 10px;
+    background-color: #F4E7EC;
+    opacity: 50%;
+    border: 10px;
+  }
+}
+@media (min-width: 320px) and (max-width: 799px) {
+  #servicios {
+    display: grid;
+    grid-template-areas: "servicio1" "servicio2" "servicio3";
+    grid-template-columns: 1fr;
+    grid-template-rows: 470px 450px 400px;
+    justify-items: center;
+  }
+  #servicios .diseño-de-marca {
+    grid-area: servicio1;
+  }
+  #servicios .diseño-de-papeleria {
+    grid-area: servicio2;
+  }
+  #servicios .diseño-web {
+    grid-area: servicio3;
+  }
+  main section .imagen-servicio {
+    height: 200px;
+    width: 300px;
+    padding: 5px;
+    margin: 5px;
+  }
+  main section div h3 {
+    width: 300px;
+    padding: 5px;
+    margin: 5px;
+    font-size: 20px;
+    height: 25px;
+    border-radius: 10px;
+  }
+  main section .lista-servicios {
+    width: 300px;
+    padding: 5px;
+    margin: 5px;
+    font-size: 12px;
+    text-align: start;
+    height: 100%;
+    border-radius: 5px;
+  }
+  main section div .boton {
+    width: 300px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+  }
+  main section div .boton .textoboton {
+    font-size: 15px;
+  }
+  main section div .boton .textoboton a:hover {
+    font-weight: lighter;
+    padding: 1px 10px;
+    background-color: #F4E7EC;
+    opacity: 50%;
+    border: 10px;
+  }
+}
+/*****CONTACTO*****/
+main #main-contactos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+}
+main #main-contactos .titulo-contacto {
+  font-family: "bebas neue";
+  font-size: 25px;
+  color: black;
+  background-color: #e8a197;
+  text-align: center;
+  height: 35px;
+  width: 420px;
+  padding: 5px;
+  margin: 10px 20px;
+  border-radius: 15px;
+}
+main #main-contactos nav .lista-contacto {
+  list-style-type: none;
+  background-color: #F4E7EC;
+  font-family: "julius";
+  font-size: 18px;
+  height: 400px;
+  width: 430px;
+  padding: 15px;
+  margin: 15px 20px;
+  border-radius: 10px;
+}
+main #main-contactos nav .lista-contacto .iconos {
+  height: 45px;
+  width: 45px;
+  padding: 5px;
+  margin: 5px;
+}
+main #main-contactos nav .lista-contacto .texto6 {
+  text-align: start;
+  color: black;
+  text-decoration: none;
+}
+main #main-contactos nav .lista-contacto .texto6:hover {
+  font-weight: lighter;
+  padding: 1px 10px;
+  background-color: #F4E7EC;
+  opacity: 50%;
+  border: 10px;
+}
+main #main-contactos div iframe {
+  height: 400px;
+  width: 430px;
+  padding: 5px;
+  margin: 5px 20px;
+}
+main #main-contactos div form div input {
+  background-color: #e8a197;
+  font-family: "julius";
+  font-size: 20px;
+  text-align: center;
+  height: 100%;
+  width: 430px;
+  padding: 5px;
+  margin: 5px 20px;
+  border-radius: 10px;
+  border: #e8a197;
+}
+main #main-contactos div form div textarea {
+  background-color: #e8a197;
+  font-family: "julius";
+  font-size: 20px;
+  text-align: start;
+  height: 255px;
+  width: 430px;
+  padding: 5px;
+  margin: 5px 20px;
+  border-radius: 10px;
+  border: #e8a197;
+}
+main #main-contactos div form div button {
+  background-color: #e8a197;
+  font-family: "julius";
+  font-size: 20px;
+  text-align: center;
+  height: 100%;
+  width: 430px;
+  padding: 5px;
+  margin: 5px 20px;
+  border-radius: 10px;
+  border: #e8a197;
+}
+
+@media (min-width: 700px) and (max-width: 1200px) {
+  main #main-contactos {
+    display: grid;
+    grid-template-areas: "contacto1" "mapa" "formulario";
+    grid-template-rows: 480px 530px 550px;
+    justify-items: center;
+  }
+  main #main-contactos .titulo-contacto {
+    font-size: 25px;
+    height: 35px;
+    width: 500px;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  main #main-contactos nav .lista-contacto {
+    font-size: 20px;
+    width: 500px;
+    padding: 15px;
+    margin: 10px;
+  }
+  main #main-contactos nav .lista-contacto .iconos {
+    height: 45px;
+    width: 45px;
+    padding: 5px;
+    margin: 5px;
+  }
+  main #main-contactos nav .lista-contacto .texto6 {
+    font-size: 20px;
+  }
+  main #main-contactos nav .lista-contacto .texto6:hover {
+    font-weight: lighter;
+    padding: 1px 10px;
+    background-color: #F4E7EC;
+    opacity: 50%;
+    border: 10px;
+  }
+  main #main-contactos div iframe {
+    height: 450px;
+    width: 500px;
+    padding: 5px;
+    margin: 5px;
+  }
+  main #main-contactos div form div input {
+    font-size: 20px;
+    width: 500px;
+    padding: 5px;
+    margin: 5px;
+  }
+  main #main-contactos div form div textarea {
+    font-size: 20px;
+    width: 500px;
+    padding: 5px;
+    margin: 5px;
+  }
+  main #main-contactos div form div button {
+    font-size: 20px;
+    width: 500px;
+    padding: 5px;
+    margin: 5px;
+  }
+}
+@media (min-width: 320px) and (max-width: 699px) {
+  main #main-contactos {
+    display: grid;
+    grid-template-areas: "contacto1" "mapa" "formulario";
+    grid-template-rows: 300px 320px 450px;
+    justify-items: center;
+  }
+  main #main-contactos .titulo-contacto {
+    font-size: 20px;
+    height: 35px;
+    width: 300px;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  main #main-contactos nav .lista-contacto {
+    font-size: 12px;
+    height: 230px;
+    width: 300px;
+    padding: 15px;
+    margin: 10px;
+  }
+  main #main-contactos nav .lista-contacto .iconos {
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    margin: 5px;
+  }
+  main #main-contactos nav .lista-contacto .texto6 {
+    font-size: 12px;
+  }
+  main #main-contactos nav .lista-contacto .texto6 a:hover {
+    font-weight: lighter;
+    padding: 1px 10px;
+    background-color: #F4E7EC;
+    opacity: 50%;
+    border: 10px;
+  }
+  main #main-contactos div iframe {
+    height: 250px;
+    width: 300px;
+    padding: 5px;
+    margin: 10px;
+  }
+  main #main-contactos div form div input {
+    font-size: 15px;
+    width: 300px;
+    padding: 5px;
+    margin: 5px 10px;
+  }
+  main #main-contactos div form div textarea {
+    font-size: 15px;
+    width: 300px;
+    padding: 5px;
+    margin: 5px 10px;
+  }
+  main #main-contactos div form div button {
+    font-size: 15px;
+    width: 300px;
+    padding: 5px;
+    margin: 5px 10px;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
