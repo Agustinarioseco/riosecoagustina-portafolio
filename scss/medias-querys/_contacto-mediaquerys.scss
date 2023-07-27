@@ -1,6 +1,7 @@
 @media (min-width: 700px) and (max-width: 1200px){
     main{
         #main-contactos {
+            overflow-x: hidden;
             display: grid;
             grid-template-areas: "contacto1" "mapa" "formulario";
             grid-template-rows: 480px 530px 550px;
@@ -12,6 +13,7 @@
                 padding: 5px;
                 margin: 10px;
                 border-radius: 10px;
+                text-align: center;
                 }
                 nav{
                     .lista-contacto {
@@ -68,16 +70,18 @@
     @media (min-width: 320px) and (max-width: 699px){
     main{
         #main-contactos {
+            overflow-x: hidden;
             display: grid;
             grid-template-areas: "contacto1" "mapa" "formulario";
-            grid-template-rows: 300px 320px 450px;
+            grid-template-rows: 320px 320px 450px;
             justify-items: center;
             .titulo-contacto {
+                text-align: center;
                 font-size:$font-20px;
                 height:35px;
                 width:300px;
                 padding:5px;
-                margin:10px;
+                margin:10px 30px;
                 border-radius:10px;
                 }
                 nav{
@@ -87,6 +91,7 @@
                         width: 300px;
                         padding: 15px;
                         margin: 10px;
+                        text-align: start;
                         .iconos {
                             height: 30px;
                             width: 30px;
@@ -106,7 +111,7 @@
                     height: 250px;
                     width: 300px;
                     padding: 5px;
-                    margin: 10px;
+                    margin: 10px 30px;
                 }
             }
             div{

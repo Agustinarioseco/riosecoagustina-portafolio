@@ -130,7 +130,7 @@ main nav div h2 a:hover {
   padding: 1px 10px;
   background-color: #F4E7EC;
   opacity: 50%;
-  border: 10px;
+  border-radius: 10px;
 }
 
 /*pie de pagina*/
@@ -164,7 +164,7 @@ footer .redesfooter a:hover {
   padding: 1px 10px;
   background-color: #F4E7EC;
   opacity: 50%;
-  border: 10px;
+  border-radius: 10px;
 }
 footer .pie-de-pagina {
   font-family: "julius";
@@ -227,7 +227,7 @@ footer .pie-de-pagina {
     padding: 1px 10px;
     background-color: #F4E7EC;
     opacity: 50%;
-    border: 10px;
+    border-radius: 10px;
   }
   /*frase inicio*/
   /*listas de la pagina de incio*/
@@ -246,12 +246,11 @@ footer .pie-de-pagina {
   }
   main nav div h2 {
     height: 50px;
-    padding: 5px;
+    padding: 10px;
     border-radius: 20px;
-    margin: 10px;
   }
   main nav div h2 .listainicio {
-    margin: 10px;
+    margin: 5px;
   }
   main nav div h2 a {
     color: black;
@@ -576,7 +575,7 @@ main section div .boton .textoboton:hover {
   padding: 1px 10px;
   background-color: #F4E7EC;
   opacity: 50%;
-  border: 10px;
+  border-radius: 10px;
 }
 
 @media (min-width: 800px) and (max-width: 1200px) {
@@ -626,7 +625,7 @@ main section div .boton .textoboton:hover {
     padding: 1px 10px;
     background-color: #F4E7EC;
     opacity: 50%;
-    border: 10px;
+    border-radius: 10px;
   }
 }
 @media (min-width: 320px) and (max-width: 799px) {
@@ -683,7 +682,7 @@ main section div .boton .textoboton:hover {
     padding: 1px 10px;
     background-color: #F4E7EC;
     opacity: 50%;
-    border: 10px;
+    border-radius: 10px;
   }
 }
 /*****CONTACTO*****/
@@ -732,7 +731,7 @@ main #main-contactos nav .lista-contacto .texto6:hover {
   padding: 1px 10px;
   background-color: #F4E7EC;
   opacity: 50%;
-  border: 10px;
+  border-radius: 10px;
 }
 main #main-contactos div iframe {
   height: 400px;
@@ -779,6 +778,7 @@ main #main-contactos div form div button {
 
 @media (min-width: 700px) and (max-width: 1200px) {
   main #main-contactos {
+    overflow-x: hidden;
     display: grid;
     grid-template-areas: "contacto1" "mapa" "formulario";
     grid-template-rows: 480px 530px 550px;
@@ -791,6 +791,7 @@ main #main-contactos div form div button {
     padding: 5px;
     margin: 10px;
     border-radius: 10px;
+    text-align: center;
   }
   main #main-contactos nav .lista-contacto {
     font-size: 20px;
@@ -812,7 +813,7 @@ main #main-contactos div form div button {
     padding: 1px 10px;
     background-color: #F4E7EC;
     opacity: 50%;
-    border: 10px;
+    border-radius: 10px;
   }
   main #main-contactos div iframe {
     height: 450px;
@@ -841,17 +842,19 @@ main #main-contactos div form div button {
 }
 @media (min-width: 320px) and (max-width: 699px) {
   main #main-contactos {
+    overflow-x: hidden;
     display: grid;
     grid-template-areas: "contacto1" "mapa" "formulario";
-    grid-template-rows: 300px 320px 450px;
+    grid-template-rows: 320px 320px 450px;
     justify-items: center;
   }
   main #main-contactos .titulo-contacto {
+    text-align: center;
     font-size: 20px;
     height: 35px;
     width: 300px;
     padding: 5px;
-    margin: 10px;
+    margin: 10px 30px;
     border-radius: 10px;
   }
   main #main-contactos nav .lista-contacto {
@@ -860,6 +863,7 @@ main #main-contactos div form div button {
     width: 300px;
     padding: 15px;
     margin: 10px;
+    text-align: start;
   }
   main #main-contactos nav .lista-contacto .iconos {
     height: 30px;
@@ -875,31 +879,31 @@ main #main-contactos div form div button {
     padding: 1px 10px;
     background-color: #F4E7EC;
     opacity: 50%;
-    border: 10px;
+    border-radius: 10px;
   }
   main #main-contactos div iframe {
     height: 250px;
     width: 300px;
     padding: 5px;
-    margin: 10px;
+    margin: 10px 30px;
   }
   main #main-contactos div form div input {
     font-size: 15px;
     width: 300px;
     padding: 5px;
-    margin: 5px 10px;
+    margin: 5px 30px;
   }
   main #main-contactos div form div textarea {
     font-size: 15px;
     width: 300px;
     padding: 5px;
-    margin: 5px 10px;
+    margin: 5px 30px;
   }
   main #main-contactos div form div button {
     font-size: 15px;
     width: 300px;
     padding: 5px;
-    margin: 5px 10px;
+    margin: 5px 30px;
   }
 }
 
