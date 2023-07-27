@@ -687,10 +687,8 @@ main section div .boton .textoboton:hover {
 }
 /*****CONTACTO*****/
 main #main-contactos {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: start;
+  display: grid;
+  grid-template-areas: "contacto1 mapa formulario";
   overflow-x: hidden;
 }
 main #main-contactos .titulo-contacto {
@@ -702,7 +700,7 @@ main #main-contactos .titulo-contacto {
   height: 35px;
   width: 400px;
   padding: 5px;
-  margin: 10px 30px 10px 20px;
+  margin: 10px 20px;
   border-radius: 15px;
 }
 main #main-contactos nav .lista-contacto {

@@ -1,10 +1,8 @@
 
 main{
     #main-contactos{
-        display: flex;
-        flex-direction:row;
-        justify-content: center;
-        align-items: start;
+        display: grid;
+        grid-template-areas: "contacto1 mapa formulario";
         overflow-x: hidden;
         .titulo-contacto {
             font-family: $titulos-importantes;
@@ -15,7 +13,7 @@ main{
             height: 35px;
             width: 400px;
             padding: 5px;
-            margin: 10px 30px 10px 20px;
+            margin: 10px 20px;
             border-radius: 15px;
         }
         nav{
