@@ -691,6 +691,7 @@ main #main-contactos {
   flex-direction: row;
   justify-content: center;
   align-items: start;
+  overflow-x: hidden;
 }
 main #main-contactos .titulo-contacto {
   font-family: "bebas neue";
@@ -699,20 +700,21 @@ main #main-contactos .titulo-contacto {
   background-color: #e8a197;
   text-align: center;
   height: 35px;
-  width: 420px;
+  width: 400px;
   padding: 5px;
-  margin: 10px 20px;
+  margin: 10px 30px 10px 20px;
   border-radius: 15px;
 }
 main #main-contactos nav .lista-contacto {
+  text-align: start;
   list-style-type: none;
   background-color: #F4E7EC;
   font-family: "julius";
-  font-size: 18px;
+  font-size: 16px;
   height: 400px;
-  width: 430px;
+  width: 400px;
   padding: 15px;
-  margin: 15px 20px;
+  margin: 10px 30px;
   border-radius: 10px;
 }
 main #main-contactos nav .lista-contacto .iconos {
@@ -735,7 +737,7 @@ main #main-contactos nav .lista-contacto .texto6:hover {
 }
 main #main-contactos div iframe {
   height: 400px;
-  width: 430px;
+  width: 400px;
   padding: 5px;
   margin: 5px 20px;
 }
@@ -745,7 +747,7 @@ main #main-contactos div form div input {
   font-size: 20px;
   text-align: center;
   height: 100%;
-  width: 430px;
+  width: 400px;
   padding: 5px;
   margin: 5px 20px;
   border-radius: 10px;
@@ -757,7 +759,7 @@ main #main-contactos div form div textarea {
   font-size: 20px;
   text-align: start;
   height: 255px;
-  width: 430px;
+  width: 400px;
   padding: 5px;
   margin: 5px 20px;
   border-radius: 10px;
@@ -769,7 +771,7 @@ main #main-contactos div form div button {
   font-size: 20px;
   text-align: center;
   height: 100%;
-  width: 430px;
+  width: 400px;
   padding: 5px;
   margin: 5px 20px;
   border-radius: 10px;
@@ -789,15 +791,16 @@ main #main-contactos div form div button {
     height: 35px;
     width: 500px;
     padding: 5px;
-    margin: 10px;
+    margin: 10px 45px;
     border-radius: 10px;
     text-align: center;
   }
   main #main-contactos nav .lista-contacto {
     font-size: 20px;
     width: 500px;
-    padding: 15px;
+    padding: 25px;
     margin: 10px;
+    text-align: start;
   }
   main #main-contactos nav .lista-contacto .iconos {
     height: 45px;
@@ -807,6 +810,8 @@ main #main-contactos div form div button {
   }
   main #main-contactos nav .lista-contacto .texto6 {
     font-size: 20px;
+    padding: 10px;
+    margin: 10px;
   }
   main #main-contactos nav .lista-contacto .texto6:hover {
     font-weight: lighter;
@@ -819,25 +824,25 @@ main #main-contactos div form div button {
     height: 450px;
     width: 500px;
     padding: 5px;
-    margin: 5px;
+    margin: 5px 45px;
   }
   main #main-contactos div form div input {
     font-size: 20px;
     width: 500px;
     padding: 5px;
-    margin: 5px;
+    margin: 5px 45px;
   }
   main #main-contactos div form div textarea {
     font-size: 20px;
     width: 500px;
     padding: 5px;
-    margin: 5px;
+    margin: 5px 45px;
   }
   main #main-contactos div form div button {
     font-size: 20px;
     width: 500px;
     padding: 5px;
-    margin: 5px;
+    margin: 5px 45px;
   }
 }
 @media (min-width: 320px) and (max-width: 699px) {

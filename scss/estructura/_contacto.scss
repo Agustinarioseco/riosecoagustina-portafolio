@@ -5,6 +5,7 @@ main{
         flex-direction:row;
         justify-content: center;
         align-items: start;
+        overflow-x: hidden;
         .titulo-contacto {
             font-family: $titulos-importantes;
             font-size: 25px;
@@ -12,21 +13,22 @@ main{
             background-color: $fondo-listas;
             text-align: center;
             height: 35px;
-            width: 420px;
+            width: 400px;
             padding: 5px;
-            margin: 10px 20px;
+            margin: 10px 30px 10px 20px;
             border-radius: 15px;
         }
         nav{
             .lista-contacto {
+                text-align: start;
                 list-style-type:none;
                 background-color:$fondo-menu-footer;
                 font-family: $titulos-secundarios;
-                font-size: 18px;
+                font-size: 16px;
                 height: 400px;
-                width: 430px;
+                width: 400px;
                 padding: 15px;
-                margin: 15px 20px;
+                margin: 10px 30px;
                 border-radius: 10px;
                 .iconos {
                    @include sizes-iconos;
@@ -44,7 +46,7 @@ main{
         div{
             iframe {
                 height: 400px;
-                width: 430px;
+                width: 400px;
                 padding: 5px;
                 margin: 5px 20px;
             }
@@ -58,7 +60,7 @@ main{
                         font-size: $font-20px;
                         text-align: center;
                         height: 100%;
-                        width: 430px;
+                        width: 400px;
                         padding: 5px;
                         margin: 5px 20px;
                         border-radius: 10px;
@@ -70,7 +72,7 @@ main{
                         font-size: $font-20px;
                         text-align: start;
                         height: 255px;
-                        width: 430px;
+                        width: 400px;
                         padding: 5px;
                         margin: 5px 20px;
                         border-radius: 10px;
@@ -82,7 +84,7 @@ main{
                         font-size: $font-20px;
                         text-align: center;
                         height: 100%;
-                        width: 430px;
+                        width: 400px;
                         padding: 5px;
                         margin: 5px 20px;
                         border-radius: 10px;

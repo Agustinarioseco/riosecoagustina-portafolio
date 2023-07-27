@@ -11,7 +11,7 @@
                 height: 35px;
                 width: 500px;
                 padding: 5px;
-                margin: 10px;
+                margin: 10px 45px;
                 border-radius: 10px;
                 text-align: center;
                 }
@@ -19,13 +19,18 @@
                     .lista-contacto {
                         font-size: 20px;
                         width: 500px;
-                        padding: 15px;
+                        padding: 25px;
                         margin: 10px;
+                        text-align: start;
                         .iconos {
                             @include sizes-iconos;
                         }  
                         .texto6 {
+
+
                             font-size: 20px;
+                            padding: 10px;
+                            margin: 10px;
                             &:hover {
                                 @include hover;
                             }
@@ -37,7 +42,7 @@
                     height: 450px;
                     width: 500px;
                     padding: 5px;
-                    margin: 5px;
+                    margin: 5px 45px;
                 }
             }
             div{
@@ -47,19 +52,19 @@
                             font-size: 20px;
                             width: 500px;
                             padding: 5px;
-                            margin: 5px;
+                            margin: 5px 45px;
                         }
                         textarea {
                             font-size: 20px;
                             width: 500px;
                             padding: 5px;
-                            margin: 5px;
+                            margin: 5px 45px;
                         }
                         button {
                             font-size: 20px;
                             width: 500px;
                             padding: 5px;
-                            margin: 5px;
+                            margin: 5px 45px;
                         }
                     }
                 }
