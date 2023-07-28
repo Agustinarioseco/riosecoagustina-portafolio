@@ -17,25 +17,28 @@
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body id="grilla">
-    <header id="header" class="header">
-<!--menu de inicio, contiene imagen de logotipo y menu principal-->
-<!--logotipo principal-->
-        <section>
-             <a href="../index.html"><img class="imagen-logo" src="../img/logo-principal.png" alt="imagen de logo"></a>  
-        </section>
+    <header class="header">
 <!--menu de inicio-->
-        <nav >
-            <ul class="menu">
-                <li><a href="../index.html" class="textomenu">Home</a></li>
-                <li><a href="./sobre-mi.html" class="textomenu">Sobre mi</a></li>
-                <li><a href="./proyectos.html" class="textomenu">Proyectos</a></li>
-                <li><a href="./servicios.html" class="textomenu">Servicios</a></li>
-                <li><a href="./contacto.html" class="textomenu">Contacto</a></li>
+      <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+          <a class="navbar-brand"  href="../index.html"><img class="imagen-logo" src="../img/logo-principal.png" alt="imagen de logo de mi marca"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link-active" href="../index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link-active" href="./sobre-mi.html">Sobre mi</a></li>
+              <li class="nav-item"><a class="nav-link-active" href="./proyectos.html">Proyectos</a></li>
+              <li class="nav-item"><a class="nav-link-active" href="./servicios.html">Servicios</a></li>
+              <li class="nav-item"><a class="nav-link-active" href="./contacto.html">Contacto</a></li>
             </ul>
-        </nav>
+          </div>
+        </div>
+      </nav>
     </header>
-    <main class="main">
 <!--main de inicio, contiene texto de bienvenida, carrusel de imagenes, descripcion sobre mi-->
+    <main class="main">
 <!--frase de bienvenida-->
       <div>
             <h1 class="animate__animated animate__bounce"> SOBRE MI </h1>

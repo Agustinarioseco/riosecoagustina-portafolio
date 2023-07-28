@@ -42,45 +42,33 @@ body #grilla .footer {
 
 /******INDEX******/
 /*menu de incio*/
-#header {
-  overflow: hidden;
+header {
   background-color: #F4E7EC;
-  display: grid;
-  grid-template-areas: "imagen-logo menu";
-  grid-template-columns: 140px 1fr;
-  grid-template-rows: 135px;
 }
-
-header section a .imagen-logo {
-  grid-area: imagen-logo;
+header nav a .imagen-logo {
   background-color: #F4E7EC;
-  height: 130px;
-  width: 130px;
+  height: 150px;
+  width: 150px;
   padding: 2px;
   margin: 2px;
 }
-header nav .menu {
+header nav .nav-link-active {
   text-decoration: none;
   list-style-type: none;
   overflow: hidden;
-  grid-area: menu;
-  height: 140px;
-  padding: 40px 10px;
-  margin: 10px 5px;
+  height: 50px;
+  padding: 10px;
+  margin: 10px 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-}
-header nav .menu .textomenu {
   font-family: "bebas neue";
-  font-size: 25px;
-  padding: 40px 10px;
-  margin: 1px;
+  font-size: 30px;
   text-decoration: none;
   color: #918f91;
 }
-header nav .menu .textomenu:hover {
+header nav .nav-link-active:hover {
   padding: 8px;
   background-color: #f6dce6;
   border-radius: 15px;
@@ -192,37 +180,28 @@ footer .pie-de-pagina {
   .footer {
     grid-area: footer;
   }
-  /*menu de incio*/
-  #header {
-    background-color: #F4E7EC;
-    width: 100%;
-    display: grid;
-    grid-template-areas: "imagen-logo" "menu";
-    grid-template-columns: 1fr;
-    grid-template-rows: 120px 40px;
-    justify-items: center;
-  }
-  header section .imagen-logo {
-    grid-area: imagen-logo;
+  header nav a .imagen-logo {
     background-color: #F4E7EC;
     height: 120px;
     width: 120px;
     padding: 5px 1px 1px;
   }
-  header nav .menu {
-    grid-area: menú;
-    justify-items: start;
-    height: 40px;
-    padding: 15px;
-    margin: 1px 5px;
+  header nav .nav-link-active {
+    text-decoration: none;
+    list-style-type: none;
+    overflow: hidden;
+    height: 20px;
+    padding: 1px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-family: "bebas neue";
+    font-size: 15px;
+    text-decoration: none;
+    color: #918f91;
   }
-  header nav .menu .textomenu {
-    grid-area: menu;
-    justify-items: start;
-    font-size: 12px;
-    padding: 5px 9px;
-  }
-  header nav .menu .textomenu:hover {
+  header nav .nav-link-active:hover {
     font-weight: lighter;
     padding: 1px 10px;
     background-color: #F4E7EC;
@@ -274,6 +253,39 @@ footer .pie-de-pagina {
     font-size: 12px;
     padding: 10px 5px 5px;
     margin: 10px 10px 5px;
+  }
+}
+@media (min-width: 700px) and (max-width: 1200px) {
+  header {
+    background-color: #F4E7EC;
+  }
+  header nav a .imagen-logo {
+    background-color: #F4E7EC;
+    height: 140px;
+    width: 140px;
+    padding: 2px;
+    margin: 2px;
+  }
+  header nav .nav-link-active {
+    text-decoration: none;
+    list-style-type: none;
+    overflow: hidden;
+    height: 40px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "bebas neue";
+    font-size: 25px;
+    text-decoration: none;
+    color: #918f91;
+  }
+  header nav .nav-link-active:hover {
+    padding: 8px;
+    background-color: #f6dce6;
+    border-radius: 15px;
   }
 }
 /******SOBRE MI******/
@@ -796,8 +808,6 @@ main #main-contactos div form div button {
   main #main-contactos nav .lista-contacto {
     font-size: 20px;
     width: 500px;
-    padding: 25px;
-    margin: 10px;
     text-align: start;
   }
   main #main-contactos nav .lista-contacto .iconos {

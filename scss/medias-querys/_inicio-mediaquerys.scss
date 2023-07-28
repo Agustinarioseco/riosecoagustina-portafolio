@@ -14,45 +14,38 @@
     .footer {
         grid-area: footer;
       }
-  /*menu de incio*/
-  #header {
-      background-color: $fondo-menu-footer;
-      width: 100%;
-      display: grid;
-      grid-template-areas: "imagen-logo" "menu";
-      grid-template-columns: 1fr;
-      grid-template-rows: 120px 40px;
-      justify-items: center;
-  }
+  
   header{
-      section{
-          .imagen-logo {
-              grid-area: imagen-logo;
-              background-color: $fondo-menu-footer;
-              height: 120px;
-              width: 120px;
-              padding: 5px 1px 1px;
-          }
-      }
-      nav{
-          .menu {
-              grid-area: menú;
-              justify-items: start;
-              height: 40px;
-              padding: 15px;
-              margin: 1px 5px;
-              .textomenu {
-                  grid-area: menu;
-                  justify-items: start;
-                  font-size: 12px;
-                  padding: 5px 9px;
-                  &:hover {
-                      @include hover;
-                  }
-              }
-          }
-      }
-  }
+        nav{
+            a{
+                .imagen-logo {
+                    background-color: $fondo-menu-footer;
+                    height: 120px;
+                    width: 120px;
+                    padding: 5px 1px 1px;
+                }
+            }
+            .nav-link-active {
+                text-decoration: none;
+                list-style-type: none;
+                overflow: hidden;
+                height: 20px;
+                padding:1px;
+                margin: 5px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                font-family:$titulos-importantes;
+                font-size: 15px;
+                text-decoration: none;
+                color:$textos-importantes;
+                &:hover{
+                    @include hover;
+                }
+            }
+        }
+    }
+
    /*frase inicio*/
    /*listas de la pagina de incio*/
   main{
@@ -105,4 +98,42 @@
           margin: 10px 10px 5px;
       }
   } 
-  }
+}
+@media (min-width: 700px) and (max-width: 1200px){
+    header{
+        background-color: $fondo-menu-footer;
+        nav{
+            a{
+                .imagen-logo {
+                    background-color:map-get($logo, background);
+                    height:140px;
+                    width:140px;
+                    padding:map-get($logo, padding);
+                    margin:map-get($logo, margin);
+                }
+            }
+            .nav-link-active{
+                text-decoration: none;
+                list-style-type: none;
+                overflow: hidden;
+                height: 40px;
+                padding:10px;
+                margin: 10px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                font-family:$titulos-importantes;
+                font-size: 25px;
+                text-decoration: none;
+                color:$textos-importantes; 
+                &:hover {
+                    font-weight:map-get($hover-inicio , lighter);
+                    padding:map-get($hover-inicio, padding);
+                    background-color:map-get($hover-inicio, background);
+                    border-radius: map-get($hover-inicio, border);
+                }
+            }
+        }
+    }
+}
