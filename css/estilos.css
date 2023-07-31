@@ -142,10 +142,10 @@ footer .redesfooter {
   justify-content: space-around;
 }
 footer .redesfooter a .footerr {
-  height: 45px;
-  width: 45px;
+  height: 40px;
+  width: 40px;
   padding: 5px;
-  margin: 5px;
+  margin: 10px 5px;
 }
 footer .redesfooter a:hover {
   font-weight: lighter;
@@ -701,7 +701,10 @@ main section div .boton .textoboton:hover {
 main #main-contactos {
   display: grid;
   grid-template-areas: "contacto1 mapa formulario";
+  grid-template-columns: 400px 400px 400px;
   overflow-x: hidden;
+  justify-items: center;
+  justify-content: center;
 }
 main #main-contactos .titulo-contacto {
   font-family: "bebas neue";
@@ -710,9 +713,9 @@ main #main-contactos .titulo-contacto {
   background-color: #e8a197;
   text-align: center;
   height: 35px;
-  width: 400px;
+  width: 360px;
   padding: 5px;
-  margin: 10px 20px;
+  margin: 15px;
   border-radius: 15px;
 }
 main #main-contactos nav .lista-contacto {
@@ -720,18 +723,18 @@ main #main-contactos nav .lista-contacto {
   list-style-type: none;
   background-color: #F4E7EC;
   font-family: "julius";
-  font-size: 16px;
+  font-size: 15px;
   height: 400px;
-  width: 400px;
-  padding: 15px;
-  margin: 10px 30px;
+  width: 360px;
+  padding: 5px;
+  margin: 15px 5px;
   border-radius: 10px;
 }
 main #main-contactos nav .lista-contacto .iconos {
-  height: 45px;
-  width: 45px;
+  height: 40px;
+  width: 40px;
   padding: 5px;
-  margin: 5px;
+  margin: 10px 5px;
 }
 main #main-contactos nav .lista-contacto .texto6 {
   text-align: start;
@@ -747,9 +750,9 @@ main #main-contactos nav .lista-contacto .texto6:hover {
 }
 main #main-contactos div iframe {
   height: 400px;
-  width: 400px;
+  width: 350px;
   padding: 5px;
-  margin: 5px 20px;
+  margin: 15px;
 }
 main #main-contactos div form div input {
   background-color: #e8a197;
@@ -757,9 +760,9 @@ main #main-contactos div form div input {
   font-size: 20px;
   text-align: center;
   height: 100%;
-  width: 400px;
+  width: 360px;
   padding: 5px;
-  margin: 5px 20px;
+  margin: 5px 15px;
   border-radius: 10px;
   border: #e8a197;
 }
@@ -769,9 +772,9 @@ main #main-contactos div form div textarea {
   font-size: 20px;
   text-align: start;
   height: 255px;
-  width: 400px;
+  width: 360px;
   padding: 5px;
-  margin: 5px 20px;
+  margin: 5px 15px;
   border-radius: 10px;
   border: #e8a197;
 }
@@ -781,9 +784,9 @@ main #main-contactos div form div button {
   font-size: 20px;
   text-align: center;
   height: 100%;
-  width: 400px;
+  width: 360px;
   padding: 5px;
-  margin: 5px 20px;
+  margin: 5px 15px;
   border-radius: 10px;
   border: #e8a197;
 }
@@ -793,7 +796,8 @@ main #main-contactos div form div button {
     overflow-x: hidden;
     display: grid;
     grid-template-areas: "contacto1" "mapa" "formulario";
-    grid-template-rows: 480px 530px 550px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 500px 500px 500px;
     justify-items: center;
   }
   main #main-contactos .titulo-contacto {
@@ -811,10 +815,10 @@ main #main-contactos div form div button {
     text-align: start;
   }
   main #main-contactos nav .lista-contacto .iconos {
-    height: 45px;
-    width: 45px;
+    height: 40px;
+    width: 40px;
     padding: 5px;
-    margin: 5px;
+    margin: 10px 5px;
   }
   main #main-contactos nav .lista-contacto .texto6 {
     font-size: 20px;
@@ -829,7 +833,7 @@ main #main-contactos div form div button {
     border-radius: 10px;
   }
   main #main-contactos div iframe {
-    height: 450px;
+    height: 400px;
     width: 500px;
     padding: 5px;
     margin: 5px 45px;
@@ -858,6 +862,7 @@ main #main-contactos div form div button {
     overflow-x: hidden;
     display: grid;
     grid-template-areas: "contacto1" "mapa" "formulario";
+    grid-template-columns: 1fr;
     grid-template-rows: 320px 320px 450px;
     justify-items: center;
   }

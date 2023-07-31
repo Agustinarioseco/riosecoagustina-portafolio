@@ -3,8 +3,12 @@
         #main-contactos {
             overflow-x: hidden;
             display: grid;
-            grid-template-areas: "contacto1" "mapa" "formulario";
-            grid-template-rows: 480px 530px 550px;
+            grid-template-areas: 
+            "contacto1"
+             "mapa" 
+             "formulario";
+             grid-template-columns: 1fr;
+            grid-template-rows: 500px 500px 500px;
             justify-items: center;
             .titulo-contacto {
                 font-size: 25px;
@@ -37,7 +41,7 @@
                 }
             div{
                 iframe{
-                    height: 450px;
+                    height: 400px;
                     width: 500px;
                     padding: 5px;
                     margin: 5px 45px;
@@ -75,7 +79,11 @@
         #main-contactos {
             overflow-x: hidden;
             display: grid;
-            grid-template-areas: "contacto1" "mapa" "formulario";
+            grid-template-areas: 
+            "contacto1" 
+            "mapa" 
+            "formulario";
+            grid-template-columns: 1fr;
             grid-template-rows: 320px 320px 450px;
             justify-items: center;
             .titulo-contacto {

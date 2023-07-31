@@ -3,7 +3,10 @@ main{
     #main-contactos{
         display: grid;
         grid-template-areas: "contacto1 mapa formulario";
+        grid-template-columns: 400px 400px 400px;
         overflow-x: hidden;
+        justify-items: center;
+        justify-content: center;
         .titulo-contacto {
             font-family: $titulos-importantes;
             font-size: 25px;
@@ -11,9 +14,9 @@ main{
             background-color: $fondo-listas;
             text-align: center;
             height: 35px;
-            width: 400px;
+            width: 360px;
             padding: 5px;
-            margin: 10px 20px;
+            margin: 15px;
             border-radius: 15px;
         }
         nav{
@@ -22,11 +25,11 @@ main{
                 list-style-type:none;
                 background-color:$fondo-menu-footer;
                 font-family: $titulos-secundarios;
-                font-size: 16px;
+                font-size: 15px;
                 height: 400px;
-                width: 400px;
-                padding: 15px;
-                margin: 10px 30px;
+                width: 360px;
+                padding: 5px;
+                margin: 15px 5px;
                 border-radius: 10px;
                 .iconos {
                    @include sizes-iconos;
@@ -44,9 +47,9 @@ main{
         div{
             iframe {
                 height: 400px;
-                width: 400px;
+                width: 350px;
                 padding: 5px;
-                margin: 5px 20px;
+                margin: 15px;
             }
         }
         div{
@@ -58,9 +61,9 @@ main{
                         font-size: $font-20px;
                         text-align: center;
                         height: 100%;
-                        width: 400px;
+                        width: 360px;
                         padding: 5px;
-                        margin: 5px 20px;
+                        margin: 5px 15px;
                         border-radius: 10px;
                         border: $fondo-listas;
                     }
@@ -70,9 +73,9 @@ main{
                         font-size: $font-20px;
                         text-align: start;
                         height: 255px;
-                        width: 400px;
+                        width: 360px;
                         padding: 5px;
-                        margin: 5px 20px;
+                        margin: 5px 15px;
                         border-radius: 10px;
                         border: $fondo-listas;
                     }
@@ -82,10 +85,10 @@ main{
                         font-size: $font-20px;
                         text-align: center;
                         height: 100%;
-                        width: 400px;
+                        width: 360px;
                         padding: 5px;
-                        margin: 5px 20px;
-                        border-radius: 10px;
+                        margin:5px 15px;
+                        border-radius:10px;
                         border: $fondo-listas;
                     }
                 } 
