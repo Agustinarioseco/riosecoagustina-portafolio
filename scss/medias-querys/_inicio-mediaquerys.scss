@@ -1,3 +1,4 @@
+/*responsive para mobile*/
 @media (min-width: 320px) and (max-width: 699px) {
     #grilla {
         overflow-x: hidden;
@@ -36,7 +37,7 @@
                 flex-direction: column;
                 align-items: flex-end;
                 font-family:$titulos-importantes;
-                font-size: 15px;
+                font-size: 17px;
                 text-decoration: none;
                 color:$textos-importantes;
                 &:hover{
@@ -46,8 +47,8 @@
         }
     }
 
-   /*frase inicio*/
-   /*listas de la pagina de incio*/
+/*frase inicio*/
+/*listas de la pagina de incio*/
   main{
         h1{
             font-size:$font-20px;
@@ -83,22 +84,23 @@
             }
         }
     } 
-  /*pie de pagina*/
-  footer{
+/*pie de pagina*/
+    footer{
       h6{
           font-size: 25px;
-      }
-      .footerr{
+        }
+        .footerr{
           height: 35px;
           width: 35px;
-      }
-      .pie-de-pagina {
+        }
+        .pie-de-pagina {
           font-size: 12px;
           padding: 10px 5px 5px;
           margin: 10px 10px 5px;
-      }
-  } 
+        }
+    } 
 }
+/*responsive para tablet y pantallas desktop pequeñas*/
 @media (min-width: 700px) and (max-width: 1200px){
     header{
         background-color: $fondo-menu-footer;
@@ -124,7 +126,7 @@
                 justify-content: space-between;
                 align-items: center;
                 font-family:$titulos-importantes;
-                font-size: 25px;
+                font-size: 27px;
                 text-decoration: none;
                 color:$textos-importantes; 
                 &:hover {
